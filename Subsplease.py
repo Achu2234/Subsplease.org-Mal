@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-def nyaa(text):
+def subsplease(text):
     templateURL = 'https://subsplease.org/rss/?r=``replaceme``'
     query = (requests.utils.quote(text))
     URL = templateURL.replace("``replaceme``",query)
